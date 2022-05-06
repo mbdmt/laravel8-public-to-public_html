@@ -81,11 +81,17 @@ public_path('../../public_html/storage') => storage_path('app/public'),
 
     步驟4 放入對應資料夾
 
-## 除了public之外的資料都放入system目錄
-## public內的資料放入public_html
+`除了public之外的資料都放入system目錄`
+`public內的資料放入public_html`
 
+    步驟5 上傳主機之後 透過路由更新storage捷徑
 
-## 重新建立storage捷徑
+打開routes/web.php
+
 ```php
-php artisan storage:link
+Route::get('/storage-link', function () {
+    Artisan::call('storage:link');
+});
 ```
+打開網址 https://你的網址/storage-link
+
