@@ -5,6 +5,11 @@
 網站根目錄
 hostpath/public_html
 
+上傳目錄-
+由於cpanel不能產生捷徑, 所以上傳路徑設定在public_html下的storage實體目錄
+
+hostpath/public_html/storage
+
 laravel主程式目錄
 hostpath/system
 
@@ -60,38 +65,23 @@ require_once __DIR__.'/../public_html/index.php';
 
 打開 config/filesystems.php
 
-找到admin的部分
+找到public的部分
 ```php
-'root' => public_path('uploads'),
+'root' => storage_path('app/public'),
 ```
 改成
 ```php
-'root' => public_path('../../public_html/uploads'),
+'root' => public_path('../../public_html/storage'),
 ```
-
-找到links的部分
-```php
-public_path('storage') => storage_path('app/public'),
-```
-改成
-```php
-public_path('../../public_html/storage') => storage_path('app/public'),
-```
-
 
     步驟4 放入對應資料夾
 
 `除了public之外的資料都放入system目錄`
 `public內的資料放入public_html`
 
-    步驟5 上傳主機之後 透過路由更新storage捷徑
 
-打開routes/web.php
 
-```php
-Route::get('/storage-link', function () {
-    Artisan::call('storage:link');
-});
-```
-打開網址 https://你的網址/storage-link
+
+
+
 
