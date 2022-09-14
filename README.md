@@ -12,7 +12,7 @@ hostpath/public_html
 hostpath/public_html/storage
 
 laravel主程式目錄
-hostpath/system
+hostpath/laravelapp
 
 ## 修改過程以原來的目錄架構表示
 
@@ -28,7 +28,7 @@ __DIR__.'/../
 
 改成
 ```php
-__DIR__.'/../system/
+__DIR__.'/../laravelapp/
 ```
 
 例如
@@ -37,7 +37,7 @@ require __DIR__.'/../vendor/autoload.php';
 ```
 改成
 ```php
-require __DIR__.'/../system/vendor/autoload.php';
+require __DIR__.'/../laravelapp/vendor/autoload.php';
 ```
 
 
@@ -77,7 +77,7 @@ require_once __DIR__.'/../public_html/index.php';
 
     步驟4 放入對應資料夾
 
-`除了public之外的資料都放入system目錄`
+`除了public之外的資料都放入laravelapp目錄`
 `public內的資料放入public_html`
 
 
