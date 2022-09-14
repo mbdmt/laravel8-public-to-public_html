@@ -1,4 +1,4 @@
-# Laravel8 supports virtual hosting settings
+# supports virtual hosting settings for Laravel8
 
 ## 目的資料夾架構
 
