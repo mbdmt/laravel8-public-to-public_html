@@ -1,4 +1,5 @@
 # supports virtual hosting settings for Laravel8
+# E.g:cpanel
 
 ## 目的資料夾架構
 
