@@ -20,13 +20,13 @@ hostpath/laravelapp
 
 打開 public/index.php
 
-找到有 
+找到所有 
 ```php
 __DIR__.'/../ 
 ```
 的地方
 
-改成
+取代成
 ```php
 __DIR__.'/../laravelapp/
 ```
