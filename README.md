@@ -75,6 +75,14 @@ require_once __DIR__.'/../public_html/index.php';
 'root' => public_path('../../public_html/storage'),
 ```
 
+如果有使用laravel admin可能會多一個admin上傳路徑的設定
+找到admin的部分做修改
+重點就是在'root' => public_path()路徑前面補上 "../../public_html" 後面通常會有自訂上傳目錄
+例如
+```php
+'root' => public_path('../../public_html/uploads/admin'),
+```
+
     步驟4 放入對應資料夾
 
 `除了public之外的資料都放入laravelapp目錄`
