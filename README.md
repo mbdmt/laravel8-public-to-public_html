@@ -3,16 +3,18 @@
 
 ## 目的資料夾架構
 
+通常使用像cpanel這類平台他的public_html上一層都還會放很多系統檔案
+所以我是把除了public的檔案放進laravelapp這個目錄, 看起來比較乾淨
+
+laravel主程式目錄
+hostpath/laravelapp
+
 網站根目錄
 hostpath/public_html
 
 上傳目錄-
 由於cpanel不能產生捷徑, 所以上傳路徑設定在public_html下的storage實體目錄
-
 hostpath/public_html/storage
-
-laravel主程式目錄
-hostpath/laravelapp
 
 ## 修改過程以原來的目錄架構表示
 
