@@ -74,7 +74,7 @@ require_once __DIR__.'/../public_html/index.php';
 ```
 改成
 ```php
-'root' => public_path('../../public_html/storage'),
+'root' => storage_path('../../public_html/storage'),
 ```
 
 如果有使用laravel admin可能會多一個admin上傳路徑的設定
